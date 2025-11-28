@@ -1,0 +1,49 @@
+nav{
+    background: var(--card-bg);
+    padding: 12px 32px;
+    margin-top: 25px;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: var(--card-border);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2{
+        color: var(--primary);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    ul{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        li{
+            color: var(--white-text);
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            a{
+                transition: 0.3s;
+                &:hover{
+                    color: var(--accent);
+                    cursor: pointer;
+                }
+            }
+
+            &:last-child{
+                background: var(--primary);
+                padding: 8px 12px;
+                border-radius: 8px;
+
+                a{
+                    &:hover{
+                        color: var(--white-text);
+                    }
+                }
+            }
+        }
+    }
+}
