@@ -1,4 +1,4 @@
-nav{
+nav {
     background: var(--card-bg);
     padding: 12px 32px;
     margin-top: 25px;
@@ -9,37 +9,46 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: calc(100% - 200px);
 
-    h2{
+
+    h2 {
         color: var(--primary);
         font-size: 1.5rem;
         cursor: pointer;
     }
 
-    ul{
+    ul {
         display: flex;
         gap: 24px;
         align-items: center;
-        li{
+
+        li {
             color: var(--white-text);
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
-            a{
+
+            a {
                 transition: 0.3s;
-                &:hover{
+
+                &:hover {
                     color: var(--accent);
                     cursor: pointer;
                 }
             }
 
-            &:last-child{
+            &:last-child {
                 background: var(--primary);
                 padding: 8px 12px;
                 border-radius: 8px;
+                transition: .3s;
 
-                a{
-                    &:hover{
+                &:hover {
+                    background-color: var(--primary-dark);
+
+                    a {
                         color: var(--white-text);
                     }
                 }
