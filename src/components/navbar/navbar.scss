@@ -1,17 +1,11 @@
 nav {
-    background: var(--card-bg);
     padding: 12px 32px;
     margin-top: 25px;
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: var(--card-border);
-    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: calc(100% - 200px);
-
 
     h2 {
         color: var(--primary);

@@ -2,7 +2,7 @@ import "./navbar.scss"
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="glass-bg">
             <div className="left">
                 <div className="logo">
                     <h2>Cohub</h2>

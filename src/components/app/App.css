@@ -32,3 +32,15 @@ a{
     text-decoration: none;
     color: var(--white-text);
 }
+
+code{
+    color: var(--primary-dark);
+}
+
+.glass-bg{
+    background: var(--card-bg);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: var(--card-border);
+    border-radius: 20px;
+}
