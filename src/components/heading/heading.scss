@@ -6,12 +6,12 @@ header{
         height: 100vh;
         
         h1{
-            font-size:4.5rem ;
+            font-size: 3.5rem ;
             color: var(--white-text);
         }
         p{
             color: var(--gray-text);
-            font-size: 1.5rem ;
+            font-size: 1.25rem ;
         }
         a{
             background: var(--primary);
@@ -19,7 +19,7 @@ header{
             border-radius: 8px;
             font-weight: 600;
             transition: .3s;
-            font-size: 1.125rem ;
+            font-size: 1rem ;
             width:fit-content;
 
 

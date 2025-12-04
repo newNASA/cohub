@@ -6,6 +6,7 @@ nav {
     justify-content: space-between;
     position: fixed;
     width: calc(100% - 200px);
+    z-index: 9999999999;
 
     h2 {
         color: var(--primary);
