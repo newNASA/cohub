@@ -13,7 +13,7 @@ const Course = ({ courses }) => {
             </div>
             <div className="bottom">
                 {courses.map((course, index) => (
-                    <div className="card" key={index}>
+                    <div className="card glass-bg" key={index}>
                         <div className="icon">
                             <img src={course.icon} alt=""/>
                         </div>
@@ -27,6 +27,7 @@ const Course = ({ courses }) => {
                                 <li key={idx} className="topic">{topic}</li>
                             ))} 
                         </ul>
+                        <a href="">Enroll Now</a>
                     </div>
                 ))}
             </div>

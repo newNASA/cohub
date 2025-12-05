@@ -12,7 +12,7 @@
     --primary: #28bd73;
     --accent: hsl(150 55% 55%);
     --white-text: #f5f5f5;
-    --white-text-opacity:#f5f5f5e6; 
+    --white-text-opacity: #f5f5f5e6;
     --card-border: 1px solid rgba(255, 255, 255, .2);
     --gray-text: #677e73;
 }
@@ -25,23 +25,69 @@ body {
     padding: 0 125px;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--white-text);
 }
 
-code{
+code {
     color: var(--primary-dark);
 }
 
-.glass-bg{
+.glass-bg {
     background: var(--card-bg);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: var(--card-border);
     border-radius: 20px;
+}
+
+.courses,
+.team {
+    margin-top: 150px;
+}
+
+
+
+.courses .top,
+.team .top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: var(--white-text);
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: var(--gray-text);
+        font-size: 1rem;
+        max-width: 672px;
+    }
+}
+
+.courses .bottom,
+.team .bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.courses .bottom .card:hover,
+.team .bottom .member:hover {
+    box-shadow: var(--card-shadow);
+    transform: translateY(-10px);
+}
+
+
+.courses .bottom .card:hover .icon {
+    transform: scale(1.1);
 }

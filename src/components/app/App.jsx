@@ -4,6 +4,7 @@ import Navbar from '../navbar/navbar'
 import Heading from '../heading/heading'
 import About from '../about/about'
 import Course from '../courses/course'
+import Team from '../team/team'
 
 import FaCode from "../../assets/icons/code.svg"
 import LuPalette from "../../assets/icons/pallete.svg"
@@ -54,6 +55,42 @@ const coursesData = [
   }
 ]
 
+import Azizbek from "../../assets/team/azizbek.webp"
+
+const team = [
+  {
+    img: Azizbek,
+    name: "Aziza Karimova",
+    role: "Web Development Mentor",
+    description: "Full-stack developer with 8+ years of experience in modern web technologies",
+  },
+  {
+    img: Azizbek,
+    name: "Sardor Abdullayev",
+    role: "Graphic Design Instructor",
+    description: "Award-winning designer specializing in branding and digital illustration",
+  },
+  {
+    img: Azizbek,
+    name: "Dilshod Rakhmonov",
+    role: "Robotics Mentor",
+    description: "Robotics engineer passionate about making STEM education accessible"
+  },
+  {
+    img: Azizbek,
+    name: "Malika Tursunova",
+    role: "English Language Teacher",
+    description: "Certified TESOL instructor with experience teaching children and adults"
+  },
+  {
+    img: Azizbek,
+    name: "Jasur Nosirovich",
+    role: "Literacy Coach",
+    description: "Education specialist focused on reading comprehension and writing skills"
+  },
+
+]
+
 function App() {
 
   return (
@@ -62,6 +99,7 @@ function App() {
       <Heading />
       <About />
       <Course courses={coursesData} />
+      <Team team={team}/>
     </div>
   )
 }

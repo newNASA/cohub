@@ -1,0 +1,36 @@
+.team {
+    .bottom {
+        .member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 10px;
+                outline: 4px solid #28bd7336;
+                margin-bottom: 16px;
+            }
+            h2{
+                font-size: 1.25rem;
+                color: var(--white-text);
+            }
+            h3{
+                margin-top: 8px;
+                font-size: 1rem;
+                color: var(--primary);
+            }
+            p{
+                font-size: 0.875rem;
+                margin-top: 8px;
+                color: var(--gray-text);
+            }
+        }
+    }
+}
